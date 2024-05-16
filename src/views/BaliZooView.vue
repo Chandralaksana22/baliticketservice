@@ -1,4 +1,5 @@
 <script>
+import ImageCard from '@/components/ImageCard.vue';
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import PlaceToGoPort from '../components/PlaceToGoPort.vue';
@@ -17,7 +18,8 @@ export default {
         Swiper,
         SwiperSlide,
         PanelInfo,
-        PlaceToGoPort
+        PlaceToGoPort,
+        ImageCard
     },
     setup() {
         return {
@@ -45,6 +47,44 @@ export default {
                     description: "Our new Elephant Mud Fun half-day package allowing guest to get down and dirty with our friendly Sumatran elephants while discovering all about their behavior and lifestyle from our experienced mahout handlers.",
                     buttonLink: "#"
                 },
+            ],
+            cards: [
+                {
+                    imageSrc: "http://localhost/bts/themes/demo/assets/images/image-1.png",
+                    title: "ELEPHANT MUD FUN SESSION ONE",
+                    session: "Morning",
+                    lastCheckIn: "07:30 (GMT+8)",
+                    inclusion: "Admission Ticket, Welcome Drink, Feeding the Elephant, Mud Fun Activity, Lunch, Towel, Insurance",
+                    link: "/booking-page",
+                    buttonText: "Book Now"
+                },
+                {
+                    imageSrc: "http://localhost/bts/themes/demo/assets/images/image-2.png",
+                    title: "ELEPHANT MUD FUN SESSION TWO",
+                    session: "Afternoon",
+                    lastCheckIn: "12:30 (GMT+8)",
+                    inclusion: "Admission Ticket, Welcome Drink, Feeding the Elephant, Mud Fun Activity, Lunch, Towel, Insurance",
+                    link: "/booking-page",
+                    buttonText: "Book Now"
+                },
+                {
+                    imageSrc: "http://localhost/bts/themes/demo/assets/images/image-1.png",
+                    title: "ELEPHANT MUD FUN SESSION ONE",
+                    session: "Morning",
+                    lastCheckIn: "07:30 (GMT+8)",
+                    inclusion: "Admission Ticket, Welcome Drink, Feeding the Elephant, Mud Fun Activity, Lunch, Towel, Insurance",
+                    link: "/booking-page",
+                    buttonText: "Book Now"
+                },
+                {
+                    imageSrc: "http://localhost/bts/themes/demo/assets/images/image-2.png",
+                    title: "ELEPHANT MUD FUN SESSION TWO",
+                    session: "Afternoon",
+                    lastCheckIn: "12:30 (GMT+8)",
+                    inclusion: "Admission Ticket, Welcome Drink, Feeding the Elephant, Mud Fun Activity, Lunch, Towel, Insurance",
+                    link: "/booking-page",
+                    buttonText: "Book Now"
+                },
             ]
         };
     }
@@ -53,13 +93,11 @@ export default {
 
 <template>
     <section class="bg-cover bg-[url('../assets/image/bg-desktop.png')]">
-
         <div class="bg-center bg-cover h-[100] md:bg-[url('../assets/image/balizoohero.png')]">
             <div class="h-[25vh] lg:h-[100vh] px-5 lg:px-10 container mx-auto flex items-center justify-center">
                 <img src="../assets/image/balizoologo.png" class="object-contain h-1/4" alt="image">
             </div>
         </div>
-
         <div class="px-5 pb-0 lg:pb-44 lg:px-10 container mx-auto">
             <div class="panel-transparent p-5 lg:p-10 rounded-3xl mt-10 mb-[-20%] relative">
                 <PanelInfo />
@@ -76,13 +114,34 @@ export default {
     </section>
     <section class="bg-cover bg-[url('../assets/image/background-biru-desktop.png')]">
         <h4 class="boldfont text-white text-3xl pt-[15%] mb-5 text-center">ALL PACKAGES, GET MORE PAY LESS</h4>
-        <div>
+        <div class="pb-10">
+            <swiper :slidesPerView="1" :spaceBetween="10" :navigation="true" :breakpoints="{
+                    '640': {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    '768': {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    '1024': {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                }" :modules="modules" class="mySwiper container mx-auto">
+                <swiper-slide  v-for="(item, index) in cards" :key="index">
+                    <div>
+                        <ImageCard :imageSrc="item.imageSrc" :title="item.title" :session="item.session"
+                            :lastCheckIn="item.lastCheckIn" :inclusion="item.inclusion" :link="item.link"
+                            :buttonText="item.buttonText" />
+                    </div>
+                </swiper-slide>
+            </swiper>
         </div>
     </section>
-
     <section>
         <div>
-            <div class="hidden lg:grid grid-cols-1 lg:grid-cols-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12">
                 <div class="col-span-5">
                     <div class="relative">
                         <swiper :navigation="true" :modules="modules" class="mySwiper">

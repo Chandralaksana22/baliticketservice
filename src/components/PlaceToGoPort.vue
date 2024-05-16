@@ -48,5 +48,5 @@ export default {
 </script>
 
 <style scoped>
-/* your component styles here */
+
 </style>
