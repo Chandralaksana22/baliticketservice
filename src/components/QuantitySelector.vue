@@ -82,5 +82,5 @@ export default {
 </script>
 
 <style scoped>
-/* Tambahkan gaya khusus di sini jika diperlukan */
+ 
 </style>

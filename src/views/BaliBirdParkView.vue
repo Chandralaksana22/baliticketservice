@@ -93,9 +93,9 @@ export default {
 
 <template>
     <section class="bg-cover bg-[url('../assets/image/bg-desktop.png')]">
-        <div class="bg-center bg-cover h-[100] md:bg-[url('../assets/image/balizoohero.png')]">
+        <div class="bg-center bg-cover h-[100] md:bg-[url('../assets/image/balibird.png')]">
             <div class="h-[25vh] lg:h-[100vh] px-5 lg:px-10 container mx-auto flex items-center justify-center">
-                <img src="../assets/image/balizoologo.png" class="object-contain h-1/4" alt="image">
+                <img src="../assets/image/balibirdlogo.png" class="object-contain h-1/4" alt="image">
             </div>
         </div>
         <div class="px-5 pb-0 lg:pb-44 lg:px-10 container mx-auto">
@@ -104,7 +104,7 @@ export default {
             </div>
         </div>
         <div id="placetogo">
-            <h4 class="boldfont text-white text-3xl mb-5 text-center">Popular Activity</h4>
+            <h4 class="boldfont text-white text-3xl mb-5 text-center">Daily Schedule</h4>
             <div class="grid grid-cols-3 px-10 mb-[-10%] gap-4 ">
                 <PlaceToGoPort v-for="(place, index) in places" :key="index" :imageSrc="place.imageSrc"
                     :title="place.title" :subTitle="place.subTitle" :description="place.description"

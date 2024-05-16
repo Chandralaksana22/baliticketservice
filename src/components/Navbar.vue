@@ -43,7 +43,7 @@
                                     </RouterLink>
                                 </li>
                                 <li class="mt-2">
-                                    <RouterLink class="block  text-sm boldfont text-black " to="/contact">Bali Bird Park
+                                    <RouterLink class="block  text-sm boldfont text-black " to="/bali-bird-park">Bali Bird Park
                                     </RouterLink>
                                 </li>
                                 <li class="mt-2">
