@@ -92,18 +92,18 @@ export default {
 </script>
 
 <template>
-    <section class="bg-cover bg-white lg:bg-[url('../assets/image/bg-desktop.png')]">
+    <section class="bg-cover bg-[url('../assets/image/bg-desktop.png')]">
         <div class="bg-center bg-cover h-[100] md:bg-[url('../assets/image/balizoohero.png')]">
             <div class="h-[25vh] lg:h-[100vh] px-5 lg:px-10 container mx-auto flex items-center justify-center">
                 <img src="../assets/image/balizoologo.png" class="object-contain h-1/4" alt="image">
             </div>
         </div>
-        <div class="hidden lg:block px-5 pb-0 lg:pb-44 lg:px-10 container mx-auto">
+        <div class="px-5 pb-0 lg:pb-44 lg:px-10 container mx-auto">
             <div class="panel-transparent p-5 lg:p-10 rounded-3xl mt-10 mb-[-20%] relative">
                 <PanelInfo />
             </div>
         </div>
-        <div id="placetogo" class="hidden lg:block">
+        <div id="placetogo">
             <h4 class="boldfont text-white text-3xl mb-5 text-center">Popular Activity</h4>
             <div class="grid grid-cols-3 px-10 mb-[-10%] gap-4 ">
                 <PlaceToGoPort v-for="(place, index) in places" :key="index" :imageSrc="place.imageSrc"
@@ -112,7 +112,7 @@ export default {
             </div>
         </div>
     </section>
-    <section class="hidden lg:block bg-cover bg-[url('../assets/image/background-biru-desktop.png')]">
+    <section class="bg-cover bg-[url('../assets/image/background-biru-desktop.png')]">
         <h4 class="boldfont text-white text-3xl pt-[15%] mb-5 text-center">ALL PACKAGES, GET MORE PAY LESS</h4>
         <div class="p-10">
 
@@ -214,7 +214,7 @@ export default {
             </div>
         </div>
     </section>
-    <section class="hidden lg:block">
+    <section>
         <div>
             <div class="grid grid-cols-1 lg:grid-cols-12">
                 <div class="col-span-5">

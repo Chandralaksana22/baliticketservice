@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 bg-transparent z-90 bg-gradient-to-b from-black to-transparent">
+        class="px-2 sm:px-4 py-2.5 fixed w-full top-0 left-0 bg-transparent bg-gradient-to-b from-black to-transparent"  :class="{ 'bg-black bg-opacity-45': isScrolled }" style="z-index: 99;">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <RouterLink class="flex items-center space-x-3 rtl:space-x-reverse" to="/">
                 <img src="../assets/image/logo.png" class="h-16" />
@@ -74,3 +74,28 @@
         </div>
     </nav>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      isScrolled: false
+    };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.isScrolled = window.scrollY > 0;
+    }
+  }
+};
+</script>
+<style>
+nav {
+  transition: background-color 0.3s ease;
+}
+</style>

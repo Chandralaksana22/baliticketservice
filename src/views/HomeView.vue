@@ -234,12 +234,10 @@ export default {
               </div>
             </swiper-slide>
           </swiper>
-          <div
-            style="z-index: 99; position: absolute; top: 6rem; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; color: white;">
+          <div class="absolute z-50 top-[6rem] left-1/2 -translate-x-1/2 text-center w-full text-white">
             <h1 class="boldfont text-3xl">PLAY WITH ALPACA AT BALI FARM HOUSE</h1>
           </div>
-          <div
-            style="z-index: 99; position: absolute; bottom: 6rem; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; color: white;">
+          <div class="absolute z-50 bottom-[6rem] left-1/2 -translate-x-1/2 text-center w-full text-white">
             <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
           </div>
         </div>
