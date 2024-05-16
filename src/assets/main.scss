@@ -20,24 +20,31 @@
   font-family: "Raleway", sans-serif;
   cursor: default;
 }
+
 .text-yellow {
   color: #FFD600 !important;
 }
+
 .text-blue {
   color: #008AC6 !important;
 }
+
 .text-brown {
   color: #824D0F !important;
 }
-.bg-yellow{
+
+.bg-yellow {
   background-color: #FFD600 !important;
 }
-.bg-blue{
+
+.bg-blue {
   background-color: #008AC6 !important;
 }
-.bg-brown{
+
+.bg-brown {
   background-color: #824D0F !important;
 }
+
 a {
   cursor: pointer !important;
 }
@@ -47,20 +54,12 @@ a {
 }
 
 #feature {
-  .feature-port, .feature-land {
+
+  .feature-port{
     display: block;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-
-    &.feature-port {
-      height: 25rem;
-    }
-
-    &.feature-land {
-      height: 20rem;
-      border-radius: 10px;
-    }
 
     .cover {
       height: 100%;
@@ -105,17 +104,110 @@ a {
         transition: transform 1s, opacity 0.1s;
       }
 
+      h3,
+      h5 {
+        color: #FFD600 !important;
+      }
+    }
+  }
+
+}
+
+#placetogo {
+  .placetogo-port {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .cover {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      position: absolute;
+      top: -25%;
+    }
+
+    img {
+      width: 100% !important;
+      height: 35rem;
+      object-fit: cover;
+      object-position: top;
+      filter: brightness(50%);
+    }
+    &:hover {
+      .cover .detail {
+        transform: translateY(0px);
+        transition: opacity 0.1s, transform 1s;
+      }
+
       h3, h5 {
         color: #FFD600 !important;
       }
     }
   }
+
+  .hover-content {
+    .content {
+      display: none;
+      transition: opacity 1s ease;
+      opacity: 0;
+    }
+
+    &:hover {
+      .content {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+
+  .img-border {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      border-radius: inherit;
+      border: 1px solid white;
+      opacity: 0.2;
+      inset: 10px;
+      z-index: 50;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+
+  .cover .detail {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 3%;
+    transform: translateY(80%);
+    backface-visibility: hidden;
+    transition: opacity 0.1s 0.3s, transform 0.4s;
+  }
+
+  .cover .detail .title {
+    line-height: 100%;
+    padding-bottom: 20% !important;
+  }
 }
+
 
 .img-border {
   display: block;
   overflow: hidden;
   position: relative;
+
   &:before {
     content: "";
     position: absolute;
@@ -126,10 +218,12 @@ a {
     z-index: 50;
     transition: opacity 0.2s; // Tambahkan transition untuk animasi yang lebih halus
   }
+
   &:hover:before {
     opacity: 1;
   }
 }
+
 .panel-home {
   .clock {
     color: #BF9500;
@@ -146,6 +240,7 @@ a {
       }
     }
   }
+
   .ticket {
     color: #BF9500;
 
@@ -161,6 +256,7 @@ a {
       }
     }
   }
+
   .map {
     color: #BF9500;
 
@@ -176,6 +272,7 @@ a {
       }
     }
   }
+
   .wo {
     color: #BF9500;
 
@@ -192,6 +289,7 @@ a {
     }
   }
 }
+
 .panel-transparent {
   .clock {
     color: white;
@@ -208,6 +306,7 @@ a {
       }
     }
   }
+
   .ticket {
     color: white;
 
@@ -223,6 +322,7 @@ a {
       }
     }
   }
+
   .map {
     color: white;
 
@@ -238,6 +338,7 @@ a {
       }
     }
   }
+
   .wo {
     color: white;
 
@@ -254,20 +355,25 @@ a {
     }
   }
 }
+
 .slide {
+
   &:hover,
   &:focus {
     box-shadow: inset 8.5em 0 0 0 #FFD600;
     transition: box-shadow 0.5s ease;
   }
 }
+
 .slide-white {
+
   &:hover,
   &:focus {
     box-shadow: inset 8.5em 0 0 0 #ffffff;
     transition: box-shadow 0.5s ease;
   }
 }
+
 .tab-button[aria-selected="true"] {
   background-color: #008AC6;
   color: white

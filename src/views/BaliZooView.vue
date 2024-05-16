@@ -1,7 +1,7 @@
 <script>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
-
+import PlaceToGoPort from '../components/PlaceToGoPort.vue';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -16,13 +16,38 @@ export default {
     components: {
         Swiper,
         SwiperSlide,
-        PanelInfo
+        PanelInfo,
+        PlaceToGoPort
     },
     setup() {
         return {
             modules: [Navigation, Pagination],
         };
     },
+    data() {
+        return {
+            places: [
+                {
+                    imageSrc: "https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg",
+                    title: "ELEPHANT MUD FUN",
+                    description: "Our new Elephant Mud Fun half-day package allowing guest to get down and dirty with our friendly Sumatran elephants while discovering all about their behavior and lifestyle from our experienced mahout handlers.",
+                    buttonLink: "#"
+                },
+                {
+                    imageSrc: "https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg",
+                    title: "ELEPHANT MUD FUN",
+                    description: "Our new Elephant Mud Fun half-day package allowing guest to get down and dirty with our friendly Sumatran elephants while discovering all about their behavior and lifestyle from our experienced mahout handlers.",
+                    buttonLink: "#"
+                },
+                {
+                    imageSrc: "https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg",
+                    title: "ELEPHANT MUD FUN",
+                    description: "Our new Elephant Mud Fun half-day package allowing guest to get down and dirty with our friendly Sumatran elephants while discovering all about their behavior and lifestyle from our experienced mahout handlers.",
+                    buttonLink: "#"
+                },
+            ]
+        };
+    }
 };
 </script>
 
@@ -40,19 +65,22 @@ export default {
                 <PanelInfo />
             </div>
         </div>
-
-        <div>
-            <h4 class="boldfont text-white text-3xl text-center">Popular Activity</h4>
+        <div id="placetogo">
+            <h4 class="boldfont text-white text-3xl mb-5 text-center">Popular Activity</h4>
+            <div class="grid grid-cols-3 px-10 mb-[-10%] gap-4 ">
+                <PlaceToGoPort v-for="(place, index) in places" :key="index" :imageSrc="place.imageSrc"
+                    :title="place.title" :subTitle="place.subTitle" :description="place.description"
+                    :buttonLink="place.buttonLink" />
+            </div>
         </div>
-
+    </section>
+    <section class="bg-cover bg-[url('../assets/image/background-biru-desktop.png')]">
+        <h4 class="boldfont text-white text-3xl pt-[15%] mb-5 text-center">ALL PACKAGES, GET MORE PAY LESS</h4>
+        <div>
+        </div>
     </section>
 
-    <section class="bg-cover h-[25vh] lg:h-auto bg-[url('../assets/image/background-biru-desktop.png')]">
-
-    </section>
-    
     <section>
-
         <div>
             <div class="hidden lg:grid grid-cols-1 lg:grid-cols-12">
                 <div class="col-span-5">
@@ -100,7 +128,6 @@ export default {
                 </div>
             </div>
         </div>
-
     </section>
 
 </template>
