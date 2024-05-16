@@ -1,4 +1,5 @@
 <template>
+    
     <div
         class="bg-center bg-cover h-[100] bg-no-repeat bg-[url('../assets/image/detailticketmobile.png')] bg-gray-600 bg-blend-multiply lg:bg-[url('../assets/image/hero-ticket.png')]">
         <div class="h-[25vh] lg:h-[50vh] px-5 lg:px-10 flex items-center">
@@ -8,6 +9,7 @@
             </h1>
         </div>
     </div>
+
     <div class="bg-white">
         <div class="container mx-auto px-5 lg:px-20">
             <div class="my-10">
@@ -476,7 +478,6 @@
                                                     <p
                                                         class="bg-yellow text-black text-xs font-bold me-2 px-2.5 py-0.5 rounded-full ">
                                                         15% Off</p>
-
                                                 </div>
                                             </div>
                                             <a href=""
@@ -487,8 +488,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
                 <div class="col-span-1">
@@ -550,6 +549,7 @@
             </div>
         </div>
     </div>
+
 </template>
 <script>
 import QuantitySelector from '../components/QuantitySelector.vue'

@@ -9,6 +9,7 @@
                     Tickets</h1>
             </div>
         </div>
+        
         <div class="px-5 block lg:hidden container mx-auto">
             <div class="relative flex py-5 items-center gap-4">
                 <span class="flex-shrink text-white text-lg">Ticket From Bali Zoo</span>

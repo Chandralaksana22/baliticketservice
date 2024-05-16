@@ -27,6 +27,7 @@ export default {
 </script>
 
 <template>
+
   <section class="bg-cover bg-[url('../assets/image/bg-desktop.png')]">
     <div
       class="bg-center bg-cover h-[100] bg-no-repeat bg-[url('../assets/image/Homepage-mobile.png')] lg:bg-[url('../assets/image/bg-home.png')]">
@@ -41,6 +42,7 @@ export default {
           BALI’S <br> EXOTIC ANIMALS</h1>
       </div>
     </div>
+
     <div class="px-5 pb-0 lg:pb-44 lg:px-10 container mx-auto">
       <div id="feature">
         <h5 class="text-center font-bold text-white text-2xl boldfont">Places To Go</h5>
@@ -147,135 +149,137 @@ export default {
         </div>
       </div>
     </div>
+
   </section>
+
   <section class="bg-cover h-[25vh] lg:h-auto bg-[url('../assets/image/background-biru-desktop.png')]">
-    <div>
-      <div class="hidden lg:grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <div class="col-span-7 pt-24">
-          <h4 class="boldfont text-white text-3xl text-center">Explore Bali Zoo</h4>
-          <div class="py-20 mx-auto px-10">
-            <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
-              <swiper-slide>
-                <div class="relative">
-                  <img src="../assets/image/bfh5.png" alt=""
-                    class="h-[60vh] w-full object-cover filter brightness-50 rounded-[20px]">
-                  <div class="px-5 absolute bottom-[5%] text-white">
-                    <h1 class="boldfont text-yellow mb-3 text-xl">ZOO EXPLORER</h1>
-                    <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
-                      eco-friendly habitants, nor is it only about allowing guest to be interactive and
-                      hands-on experience.</p>
-                    <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
-                  </div>
+
+    <div class="hidden lg:grid grid-cols-1 lg:grid-cols-12 gap-4">
+      <div class="col-span-7 pt-24">
+        <h4 class="boldfont text-white text-3xl text-center">Explore Bali Zoo</h4>
+        <div class="py-20 mx-auto px-10">
+          <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
+            <swiper-slide>
+              <div class="relative">
+                <img src="../assets/image/bfh5.png" alt=""
+                  class="h-[60vh] w-full object-cover filter brightness-50 rounded-[20px]">
+                <div class="px-5 absolute bottom-[5%] text-white">
+                  <h1 class="boldfont text-yellow mb-3 text-xl">ZOO EXPLORER</h1>
+                  <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
+                    eco-friendly habitants, nor is it only about allowing guest to be interactive and
+                    hands-on experience.</p>
+                  <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
                 </div>
-              </swiper-slide>
-              <swiper-slide>
-                <div class="relative">
-                  <img src="../assets/image/bfh3.png" alt=""
-                    class="h-[60vh] w-full object-cover filter brightness-50 rounded-[20px]">
-                  <div class="px-5 absolute bottom-[5%] text-white">
-                    <h1 class="boldfont text-yellow mb-3">ZOO EXPLORER</h1>
-                    <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
-                      eco-friendly habitants, nor is it only about allowing guest to be interactive and
-                      hands-on experience.</p>
-                    <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
-                  </div>
-                </div>
-              </swiper-slide>
-            </swiper>
-          </div>
-        </div>
-        <div class="col-span-5 bg-[url('../assets/image/plan.png')]">
-          <div class="pt-24">
-            <h4 class="boldfont text-white text-3xl text-center"> A WELL SPENT DAY <br> at BALI BIRD PARK</h4>
-            <div class="py-20 px-10">
-              <swiper :navigation="true" :modules="modules" class="mySwiper">
-                <swiper-slide>
-                  <div class="relative">
-                    <img src="../assets/image/bfh5.png" alt=""
-                      class="h-[50vh] w-full object-cover filter brightness-50 rounded-[20px]">
-                  </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="relative">
-                    <img src="../assets/image/bfh5.png" alt=""
-                      class="h-[50vh] w-full object-cover filter brightness-50 rounded-[20px]">
-                  </div>
-                </swiper-slide>
-              </swiper>
-              <div class="text-center mx-auto mt-5">
-                <p class="mb-5 text-white">Pesky Parakeet Feeding</p>
-                <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
               </div>
-            </div>
-          </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="relative">
+                <img src="../assets/image/bfh3.png" alt=""
+                  class="h-[60vh] w-full object-cover filter brightness-50 rounded-[20px]">
+                <div class="px-5 absolute bottom-[5%] text-white">
+                  <h1 class="boldfont text-yellow mb-3">ZOO EXPLORER</h1>
+                  <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
+                    eco-friendly habitants, nor is it only about allowing guest to be interactive and
+                    hands-on experience.</p>
+                  <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div>
-      <div class="hidden lg:grid grid-cols-1 lg:grid-cols-12">
-        <div class="col-span-5">
-          <div class="relative">
+      <div class="col-span-5 bg-[url('../assets/image/plan.png')]">
+        <div class="pt-24">
+          <h4 class="boldfont text-white text-3xl text-center"> A WELL SPENT DAY <br> at BALI BIRD PARK</h4>
+          <div class="py-20 px-10">
             <swiper :navigation="true" :modules="modules" class="mySwiper">
               <swiper-slide>
                 <div class="relative">
-                  <img src="../assets/image/bfh5.png" alt="" class="h-[100vh] w-full object-cover filter brightness-50">
+                  <img src="../assets/image/bfh5.png" alt=""
+                    class="h-[50vh] w-full object-cover filter brightness-50 rounded-[20px]">
                 </div>
               </swiper-slide>
               <swiper-slide>
                 <div class="relative">
-                  <img src="../assets/image/bfh5.png" alt="" class="h-[100vh] w-full object-cover filter brightness-50">
+                  <img src="../assets/image/bfh5.png" alt=""
+                    class="h-[50vh] w-full object-cover filter brightness-50 rounded-[20px]">
                 </div>
               </swiper-slide>
             </swiper>
-            <div
-              style="z-index: 99; position: absolute; top: 6rem; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; color: white;">
-              <h1 class="boldfont text-3xl">PLAY WITH ALPACA AT BALI FARM HOUSE</h1>
-            </div>
-            <div
-              style="z-index: 99; position: absolute; bottom: 6rem; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; color: white;">
+            <div class="text-center mx-auto mt-5">
+              <p class="mb-5 text-white">Pesky Parakeet Feeding</p>
               <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
             </div>
           </div>
         </div>
-        <div class="col-span-7 bg-contain bg-[url('../assets/image/bg-hijau.png')]">
-          <h4 class="boldfont pt-24  text-white text-3xl text-center">Explore Bali Zoo</h4>
-          <div class="pt-10 mx-auto px-10">
-            <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
-              <swiper-slide>
-                <div class="relative">
-                  <img src="../assets/image/bfh5.png" alt=""
-                    class="h-[60vh] w-full object-cover filter brightness-50 rounded-[20px]">
-                  <div class="px-5 absolute bottom-[5%] text-white">
-                    <h1 class="boldfont text-yellow mb-3 text-xl">ZOO EXPLORER</h1>
-                    <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
-                      eco-friendly habitants, nor is it only about allowing guest to be interactive and
-                      hands-on experience.</p>
-                    <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
-                  </div>
-                </div>
-              </swiper-slide>
-              <swiper-slide>
-                <div class="relative">
-                  <img src="../assets/image/bfh3.png" alt=""
-                    class="h-[60vh] w-full object-cover filter brightness-50 rounded-[20px]">
-                  <div class="px-5 absolute bottom-[5%] text-white">
-                    <h1 class="boldfont text-yellow mb-3">ZOO EXPLORER</h1>
-                    <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
-                      eco-friendly habitants, nor is it only about allowing guest to be interactive and
-                      hands-on experience.</p>
-                    <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
-                  </div>
-                </div>
-              </swiper-slide>
-            </swiper>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="hidden lg:grid grid-cols-1 lg:grid-cols-12">
+      <div class="col-span-5">
+        <div class="relative">
+          <swiper :navigation="true" :modules="modules" class="mySwiper">
+            <swiper-slide>
+              <div class="relative">
+                <img src="../assets/image/bfh5.png" alt="" class="h-[100vh] w-full object-cover filter brightness-50">
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="relative">
+                <img src="../assets/image/bfh5.png" alt="" class="h-[100vh] w-full object-cover filter brightness-50">
+              </div>
+            </swiper-slide>
+          </swiper>
+          <div
+            style="z-index: 99; position: absolute; top: 6rem; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; color: white;">
+            <h1 class="boldfont text-3xl">PLAY WITH ALPACA AT BALI FARM HOUSE</h1>
+          </div>
+          <div
+            style="z-index: 99; position: absolute; bottom: 6rem; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; color: white;">
+            <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
           </div>
         </div>
       </div>
+      <div class="col-span-7 bg-contain bg-[url('../assets/image/bg-hijau.png')]">
+        <h4 class="boldfont pt-24  text-white text-3xl text-center">Explore Bali Zoo</h4>
+        <div class="pt-10 mx-auto px-10">
+          <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
+            <swiper-slide>
+              <div class="relative">
+                <img src="../assets/image/bfh5.png" alt=""
+                  class="h-[60vh] w-full object-cover filter brightness-50 rounded-[20px]">
+                <div class="px-5 absolute bottom-[5%] text-white">
+                  <h1 class="boldfont text-yellow mb-3 text-xl">ZOO EXPLORER</h1>
+                  <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
+                    eco-friendly habitants, nor is it only about allowing guest to be interactive and
+                    hands-on experience.</p>
+                  <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="relative">
+                <img src="../assets/image/bfh3.png" alt=""
+                  class="h-[60vh] w-full object-cover filter brightness-50 rounded-[20px]">
+                <div class="px-5 absolute bottom-[5%] text-white">
+                  <h1 class="boldfont text-yellow mb-3">ZOO EXPLORER</h1>
+                  <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
+                    eco-friendly habitants, nor is it only about allowing guest to be interactive and
+                    hands-on experience.</p>
+                  <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
     </div>
-  </section>
 
+  </section>
 
 </template>
 

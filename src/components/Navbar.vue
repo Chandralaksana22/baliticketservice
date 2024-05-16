@@ -39,7 +39,7 @@
                         <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white rounded-lg w-52 ">
                             <ul class="py-2 px-3 text-sm " aria-labelledby="dropdownLargeButton">
                                 <li>
-                                    <RouterLink class="block  text-sm boldfont text-black " to="/contact">Bali Zoo
+                                    <RouterLink class="block  text-sm boldfont text-black " to="/bali-zoo">Bali Zoo
                                     </RouterLink>
                                 </li>
                                 <li class="mt-2">

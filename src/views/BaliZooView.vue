@@ -28,24 +28,31 @@ export default {
 
 <template>
     <section class="bg-cover bg-[url('../assets/image/bg-desktop.png')]">
+
         <div class="bg-center bg-cover h-[100] md:bg-[url('../assets/image/balizoohero.png')]">
             <div class="h-[25vh] lg:h-[100vh] px-5 lg:px-10 container mx-auto flex items-center justify-center">
                 <img src="../assets/image/balizoologo.png" class="object-contain h-1/4" alt="image">
             </div>
         </div>
+
         <div class="px-5 pb-0 lg:pb-44 lg:px-10 container mx-auto">
             <div class="panel-transparent p-5 lg:p-10 rounded-3xl mt-10 mb-[-20%] relative">
                 <PanelInfo />
             </div>
         </div>
+
         <div>
             <h4 class="boldfont text-white text-3xl text-center">Popular Activity</h4>
         </div>
+
     </section>
+
     <section class="bg-cover h-[25vh] lg:h-auto bg-[url('../assets/image/background-biru-desktop.png')]">
 
     </section>
+    
     <section>
+
         <div>
             <div class="hidden lg:grid grid-cols-1 lg:grid-cols-12">
                 <div class="col-span-5">
@@ -82,7 +89,8 @@ export default {
                     </div>
                 </div>
                 <div class="col-span-7 bg-cover bg-center bg-[url('../assets/image/bg-hijau.png')]">
-                    <button type="button" class="bg-yellow p-3 boldfont text-xl rounded-b-xl" style="position: relative; top:50%; transform-origin: top left; transform: rotate(-90deg) translateX(-50%);">
+                    <button type="button" class="bg-yellow p-3 boldfont text-xl rounded-b-xl"
+                        style="position: relative; top:50%; transform-origin: top left; transform: rotate(-90deg) translateX(-50%);">
                         <h3 class="boldfont">MEMBERSHIP</h3>
                     </button>
                     <div class="flex flex-col items-center justify-center pt-10 mx-auto px-10 space-y-4">
@@ -92,8 +100,8 @@ export default {
                 </div>
             </div>
         </div>
-    </section>
 
+    </section>
 
 </template>
 

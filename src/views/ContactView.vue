@@ -26,6 +26,7 @@ export default {
 </script>
 <template>
     <section class="bg-cover bg-[url('../assets/image/bg-desktop.png')]">
+
         <div class="bg-center bg-cover h-[100] bg-no-repeat bg-[url('../assets/image/herocontact.jpeg')]">
             <div class="h-[25vh] lg:h-[50vh] px-5 lg:px-10 flex items-center">
                 <h1
@@ -141,5 +142,6 @@ export default {
                 </div>
             </div>
         </div>
+
     </section>
 </template>
