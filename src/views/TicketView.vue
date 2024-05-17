@@ -122,11 +122,11 @@ export default {
                     Tickets</h1>
             </div>
         </div>
-        <div id="placetogo" class="hidden lg:block">
+        <div id="placetogo" class="hidden lg:block container mx-auto">
             <h4 class="boldfont text-white text-3xl mb-5 mt-10 text-center">General Admission</h4>
             <div class="grid grid-cols-4 p-10 gap-4 ">
                 <div class="relative img-border card overflow-hidden zoom-on-hover">
-                    <img class="filter brightness-50 h-[60vh] object-cover"
+                    <img class="filter brightness-50 h-[400px] object-cover"
                         src="https://s3-alpha-sig.figma.com/img/2e71/4d3d/9aad058f82c8f1188e2a86e7628b141c?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SbCjRcbtq3ere9ddHQ-Xg1vrR~hRv~6Gxc8oxxHenPHVmrtsE926UOM7ok~iCA~rIrATl-Bt0ntpr-OXlQy3ukRMr76eHzMiPtQKcqGcgAGa~0NrxwuoI~4LmoUsebKLDtrC-WhZAR6ArdF3~X98lt3C0ketJn4RJxu1nrTGfytJbXff~bvzMQr2Z-PoiKRTjXcrOyOdNe4P58dpxdoRV59d6~hG71JXDfUHw1WmcdxvoaOM~mM~tj5e~HVN7wYShEHT3VIgiiEftSKMSBor~2XtsebBioxh3yYkVjwTq3lJcLnXuKvBihtNnSVGbQ4qG58SW3z095BYRZAH1Iw4Wg__"
                         alt="">
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 text-center w-100 text-white">
@@ -139,7 +139,7 @@ export default {
                     </div>
                 </div>
                 <div class="relative img-border card overflow-hidden zoom-on-hover">
-                    <img class="filter brightness-50 h-[60vh] object-cover"
+                    <img class="filter brightness-50 h-[400px] object-cover"
                         src="https://s3-alpha-sig.figma.com/img/2e71/4d3d/9aad058f82c8f1188e2a86e7628b141c?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SbCjRcbtq3ere9ddHQ-Xg1vrR~hRv~6Gxc8oxxHenPHVmrtsE926UOM7ok~iCA~rIrATl-Bt0ntpr-OXlQy3ukRMr76eHzMiPtQKcqGcgAGa~0NrxwuoI~4LmoUsebKLDtrC-WhZAR6ArdF3~X98lt3C0ketJn4RJxu1nrTGfytJbXff~bvzMQr2Z-PoiKRTjXcrOyOdNe4P58dpxdoRV59d6~hG71JXDfUHw1WmcdxvoaOM~mM~tj5e~HVN7wYShEHT3VIgiiEftSKMSBor~2XtsebBioxh3yYkVjwTq3lJcLnXuKvBihtNnSVGbQ4qG58SW3z095BYRZAH1Iw4Wg__"
                         alt="">
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 text-center w-100 text-white">
@@ -152,7 +152,7 @@ export default {
                     </div>
                 </div>
                 <div class="relative img-border card overflow-hidden zoom-on-hover">
-                    <img class="filter brightness-50 h-[60vh] object-cover"
+                    <img class="filter brightness-50 h-[400px] object-cover"
                         src="https://s3-alpha-sig.figma.com/img/2e71/4d3d/9aad058f82c8f1188e2a86e7628b141c?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SbCjRcbtq3ere9ddHQ-Xg1vrR~hRv~6Gxc8oxxHenPHVmrtsE926UOM7ok~iCA~rIrATl-Bt0ntpr-OXlQy3ukRMr76eHzMiPtQKcqGcgAGa~0NrxwuoI~4LmoUsebKLDtrC-WhZAR6ArdF3~X98lt3C0ketJn4RJxu1nrTGfytJbXff~bvzMQr2Z-PoiKRTjXcrOyOdNe4P58dpxdoRV59d6~hG71JXDfUHw1WmcdxvoaOM~mM~tj5e~HVN7wYShEHT3VIgiiEftSKMSBor~2XtsebBioxh3yYkVjwTq3lJcLnXuKvBihtNnSVGbQ4qG58SW3z095BYRZAH1Iw4Wg__"
                         alt="">
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 text-center w-100 text-white">
@@ -165,7 +165,7 @@ export default {
                     </div>
                 </div>
                 <div class="relative img-border card overflow-hidden zoom-on-hover">
-                    <img class="filter brightness-50 h-[60vh] object-cover"
+                    <img class="filter brightness-50 h-[400px] object-cover"
                         src="https://s3-alpha-sig.figma.com/img/2e71/4d3d/9aad058f82c8f1188e2a86e7628b141c?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SbCjRcbtq3ere9ddHQ-Xg1vrR~hRv~6Gxc8oxxHenPHVmrtsE926UOM7ok~iCA~rIrATl-Bt0ntpr-OXlQy3ukRMr76eHzMiPtQKcqGcgAGa~0NrxwuoI~4LmoUsebKLDtrC-WhZAR6ArdF3~X98lt3C0ketJn4RJxu1nrTGfytJbXff~bvzMQr2Z-PoiKRTjXcrOyOdNe4P58dpxdoRV59d6~hG71JXDfUHw1WmcdxvoaOM~mM~tj5e~HVN7wYShEHT3VIgiiEftSKMSBor~2XtsebBioxh3yYkVjwTq3lJcLnXuKvBihtNnSVGbQ4qG58SW3z095BYRZAH1Iw4Wg__"
                         alt="">
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 text-center w-100 text-white">
@@ -180,7 +180,7 @@ export default {
             </div>
         </div>
         <h4 class="hidden lg:block boldfont text-white text-3xl pt-5 mb-5 text-center">MORE PACKAGES FROM BALI ZOO</h4>
-        <div class="relative z-50 p-10 mb-[-10%]">
+        <div class="relative z-50 p-10 mb-[-10%] container mx-auto">
             <div class="mb-4">
                 <ul class="flex flex-wrap -mb-px text-sm font-medium mx-auto justify-center text-center"
                     id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" role="tablist">
@@ -279,7 +279,7 @@ export default {
         </div>
     </section>
     <section class="hidden lg:block bg-cover bg-white lg:bg-[url('../assets/image/background-biru-desktop.png')]">
-        <div id="placetogo" class="pt-[15%]">
+        <div id="placetogo" class="pt-[15%] container mx-auto">
             <h4 class="boldfont text-white text-3xl mb-5 text-center">MORE OFFER FROM BALI SAFARI</h4>
             <div class="grid grid-cols-3 p-10 mb-[-10%] gap-4">
                 <HorizontalCard v-for="(place, index) in balisafari" :key="index" :imageSrc="place.imageSrc"
@@ -289,7 +289,7 @@ export default {
         </div>
     </section>
     <section class="hidden lg:block bg-cover bg-white lg:bg-[url('../assets/image/bg-hijau.png')]">
-        <div id="placetogo" class="pt-[15%]">
+        <div id="placetogo" class="pt-[15%] container mx-auto">
             <h4 class="boldfont text-white text-3xl mb-5 text-center">MORE OFFER FROM BALI SAFARI</h4>
             <div class="grid grid-cols-3 p-10 gap-4">
                 <div class="bg-white h-full overflow-hidden rounded-lg card-zoom-hover">
