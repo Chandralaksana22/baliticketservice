@@ -84,7 +84,7 @@ export default {
         </div>
         <div>
             <h4 class="boldfont text-white text-3xl mb-5 text-center">Daily Schedule</h4>
-            <div class="container mx-auto ps-10 pb-10">
+            <div class="pb-10">
                 <swiper :slidesPerView="1" :spaceBetween="10" :navigation="true" :breakpoints="{
                     '640': {
                         slidesPerView: 2,
@@ -98,14 +98,14 @@ export default {
                         slidesPerView: 3.3,
                         spaceBetween: 20,
                     },
-                }" :modules="modules" class="mySwiper">
+                }" :modules="modules" class="mySwiper ps-10">
                     <swiper-slide v-for="(card, index) in cards" :key="index">
                         <CardComponent :imageSrc="card.imageSrc" :imageAlt="card.imageAlt" :title="card.title"
                             :link="card.link" :buttonText="card.buttonText" />
                     </swiper-slide>
                 </swiper>
             </div>
-            <div class="container mx-auto ps-10 mb-[-10%]">
+            <div class="mb-[-10%]">
                 <swiper :slidesPerView="1" :spaceBetween="10" :navigation="true" :breakpoints="{
                     '640': {
                         slidesPerView: 2,
@@ -168,5 +168,8 @@ button.package[aria-selected="false"] {
 button.package[aria-selected="true"] {
     background-color: #FFD600;
     color: #0887BE;
+}
+.swiper-wrapper{
+    padding-left: 2.5rem !important
 }
 </style>

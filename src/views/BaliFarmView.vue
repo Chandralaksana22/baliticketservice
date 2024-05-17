@@ -64,7 +64,7 @@ export default {
                 <PanelInfo />
             </div>
         </div>
-        <div id="placetogo" class="hidden lg:block">
+        <div id="placetogo" class="hidden lg:block container mx-auto">
             <h4 class="boldfont text-white text-3xl text-center">DAILY PASS</h4>
             <h4 class="text-white text-lg mb-5 text-center">(For Indonesian ID and Kitas holder)</h4>
             <div class="grid grid-cols-3 px-10 mb-[-10%] gap-4 ">
@@ -75,28 +75,30 @@ export default {
         </div>
     </section>
     <section class="hidden lg:block bg-cover bg-[url('../assets/image/background-biru-desktop.png')]">
-        <h4 class="boldfont text-white text-3xl pt-[15%] mb-5 text-center">OTHER ACTIVITY</h4>
-        <div class="p-10 grid grid-cols-2 gap-4">
-            <div class="relative">
-                <img src="../assets/image/bfh5.png" alt=""
-                    class="h-[50vh] w-full object-cover filter brightness-50">
-                <div class="absolute inset-0 flex flex-col justify-center px-10 text-white">
-                    <h1 class="boldfont text-yellow mb-3 text-xl">ZOO EXPLORER</h1>
-                    <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
-                        eco-friendly habitants, nor is it only about allowing guest to be interactive and
-                        hands-on experience.</p>
-                    <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont w-fit">Book Ticket</a>
+        <div class="container mx-auto">
+            <h4 class="boldfont text-white text-3xl pt-[15%] mb-5 text-center">OTHER ACTIVITY</h4>
+            <div class="p-10 grid grid-cols-2 gap-4">
+                <div class="relative">
+                    <img src="../assets/image/bfh5.png" alt=""
+                        class="h-[50vh] w-full object-cover filter brightness-50">
+                    <div class="absolute inset-0 flex flex-col justify-center px-10 text-white">
+                        <h1 class="boldfont text-yellow mb-3 text-xl">ZOO EXPLORER</h1>
+                        <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
+                            eco-friendly habitants, nor is it only about allowing guest to be interactive and
+                            hands-on experience.</p>
+                        <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont w-fit">Book Ticket</a>
+                    </div>
                 </div>
-            </div>
-            <div class="relative">
-                <img src="../assets/image/bfh5.png" alt=""
-                    class="h-[50vh] w-full object-cover filter brightness-50">
-                <div class="absolute inset-0 flex flex-col justify-center px-10 text-white">
-                    <h1 class="boldfont text-yellow mb-3 text-xl">ZOO EXPLORER</h1>
-                    <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
-                        eco-friendly habitants, nor is it only about allowing guest to be interactive and
-                        hands-on experience.</p>
-                    <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont w-fit">Book Ticket</a>
+                <div class="relative">
+                    <img src="../assets/image/bfh5.png" alt=""
+                        class="h-[50vh] w-full object-cover filter brightness-50">
+                    <div class="absolute inset-0 flex flex-col justify-center px-10 text-white">
+                        <h1 class="boldfont text-yellow mb-3 text-xl">ZOO EXPLORER</h1>
+                        <p class="mb-5">At the Bali Zoo, getting Zoological isn’t just about having exotic animals in
+                            eco-friendly habitants, nor is it only about allowing guest to be interactive and
+                            hands-on experience.</p>
+                        <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont w-fit">Book Ticket</a>
+                    </div>
                 </div>
             </div>
         </div>

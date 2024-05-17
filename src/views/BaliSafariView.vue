@@ -56,55 +56,69 @@ export default {
 <template>
     <section class="bg-cover bg-white lg:bg-[url('../assets/image/bg-desktop.png')]">
         <img src="../assets/image/balisafari.png" alt="../assets/image/balisafari.png">
-        <div class="hidden lg:block px-5 pb-0 lg:pb-44 lg:px-10 container mx-auto">
-            <div class="panel-transparent p-5 lg:p-10 rounded-3xl mt-10 mb-[-20%] relative">
-                <PanelInfo />
-            </div>
-        </div>
-        <div id="placetogo" class="hidden lg:block">
-            <h4 class="boldfont text-white text-3xl mb-5 text-center">General Admission</h4>
-            <div class="grid grid-cols-3 p-10 gap-4">
-                <PlaceToGoPort v-for="(place, index) in places" :key="index" :imageSrc="place.imageSrc"
-                    :title="place.title" :subTitle="place.subTitle" :description="place.description"
-                    :buttonLink="place.buttonLink" />
-            </div>
-        </div>
-        <h4 class="boldfont text-white text-3xl pb-5 text-center">WHAT’S NEW ON BALI SAFARI</h4>
-        <div class="px-10 relative z-10">
-            <div class="rounded-xl p-10 bg-cover bg-[url('../assets/image/bg-card.png')] grid grid-cols-2 gap-4 justify-center">
-                <div>
-                    <img src="../assets/image/varunalogo.png" class="object-contain h-40 mb-20" alt="">
-                    <h1 class="boldfont text-white text-3xl">Varuna Show</h1>
-                    <p class="text-white text-md mt-10">Varuna’s stage bursts to life with vibrant performers, adorned
-                        in marine-inspired attire, guiding you through the captivating odyssey of Varuna, the young
-                        hero. The voyage unfolds with every dish, act, and moment, creating an immersive narrative.</p>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <div class="gap-4 rounded-xl border-2 border-white backdrop-blur-sm bg-white/30 h-fit p-5">
-                        <div class="flex justify-between items-center">
-                            <h1 class="text-white font-semibold text-xl">PREMIUM PACKAGE</h1>
-                            <a href="" class="p-2 boldfont text-xs bg-white text-black rounded-lg w-fit float-end">Book Ticket</a>
-                        </div>
-                        <p class="mt-5 text-sm text-white">Wine (red/white), 3-course lunch, preferential seating, and VIP waiting lounge with free canape & mocktail/cocktail</p>
-                    </div>
-                    <div class="gap-4 rounded-xl border-2 border-white backdrop-blur-sm bg-white/30 h-fit p-5">
-                        <div class="flex justify-between items-center">
-                            <h1 class="text-white font-semibold text-xl">PREMIUM PACKAGE</h1>
-                            <a href="" class="p-2 boldfont text-xs bg-white text-black rounded-lg w-fit float-end">Book Ticket</a>
-                        </div>
-                        <p class="mt-5 text-sm text-white">Wine (red/white), 3-course lunch, preferential seating, and VIP waiting lounge with free canape & mocktail/cocktail</p>
-                    </div>
-                    <div class="gap-4 rounded-xl border-2 border-white backdrop-blur-sm bg-white/30 h-fit p-5">
-                        <div class="flex justify-between items-center">
-                            <h1 class="text-white font-semibold text-xl">PREMIUM PACKAGE</h1>
-                            <a href="" class="p-2 boldfont text-xs bg-white text-black rounded-lg w-fit float-end">Book Ticket</a>
-                        </div>
-                        <p class="mt-5 text-sm text-white">Wine (red/white), 3-course lunch, preferential seating, and VIP waiting lounge with free canape & mocktail/cocktail</p>
-                    </div>
+        <div class="container mx-auto hidden lg:block">
+            <div class="px-5 pb-0 lg:pb-44 lg:px-10 container mx-auto">
+                <div class="panel-transparent p-5 lg:p-10 rounded-3xl mt-10 mb-[-20%] relative">
+                    <PanelInfo />
                 </div>
             </div>
+            <div id="placetogo">
+                <h4 class="boldfont text-white text-3xl mb-5 text-center">General Admission</h4>
+                <div class="grid grid-cols-3 p-10 gap-4">
+                    <PlaceToGoPort v-for="(place, index) in places" :key="index" :imageSrc="place.imageSrc"
+                        :title="place.title" :subTitle="place.subTitle" :description="place.description"
+                        :buttonLink="place.buttonLink" />
+                </div>
+            </div>
+            <h4 class="boldfont text-white text-3xl py-10 text-center">WHAT’S NEW ON BALI SAFARI</h4>
+            <div class="px-10 relative z-10">
+                <div
+                    class="rounded-xl p-10 bg-cover bg-[url('../assets/image/bg-card.png')] grid grid-cols-2 gap-4 justify-center">
+                    <div>
+                        <img src="../assets/image/varunalogo.png" class="object-contain h-40 mb-20" alt="">
+                        <h1 class="boldfont text-white text-3xl">Varuna Show</h1>
+                        <p class="text-white text-md mt-10">Varuna’s stage bursts to life with vibrant performers,
+                            adorned
+                            in marine-inspired attire, guiding you through the captivating odyssey of Varuna, the young
+                            hero. The voyage unfolds with every dish, act, and moment, creating an immersive narrative.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="gap-4 rounded-xl border-2 border-white backdrop-blur-sm bg-white/30 h-fit p-5">
+                            <div class="flex justify-between items-center">
+                                <h1 class="text-white font-semibold text-xl">PREMIUM PACKAGE</h1>
+                                <a href=""
+                                    class="p-2 boldfont text-xs bg-white text-black rounded-lg w-fit float-end">Book
+                                    Ticket</a>
+                            </div>
+                            <p class="mt-5 text-sm text-white">Wine (red/white), 3-course lunch, preferential seating,
+                                and VIP waiting lounge with free canape & mocktail/cocktail</p>
+                        </div>
+                        <div class="gap-4 rounded-xl border-2 border-white backdrop-blur-sm bg-white/30 h-fit p-5">
+                            <div class="flex justify-between items-center">
+                                <h1 class="text-white font-semibold text-xl">PREMIUM PACKAGE</h1>
+                                <a href=""
+                                    class="p-2 boldfont text-xs bg-white text-black rounded-lg w-fit float-end">Book
+                                    Ticket</a>
+                            </div>
+                            <p class="mt-5 text-sm text-white">Wine (red/white), 3-course lunch, preferential seating,
+                                and VIP waiting lounge with free canape & mocktail/cocktail</p>
+                        </div>
+                        <div class="gap-4 rounded-xl border-2 border-white backdrop-blur-sm bg-white/30 h-fit p-5">
+                            <div class="flex justify-between items-center">
+                                <h1 class="text-white font-semibold text-xl">PREMIUM PACKAGE</h1>
+                                <a href=""
+                                    class="p-2 boldfont text-xs bg-white text-black rounded-lg w-fit float-end">Book
+                                    Ticket</a>
+                            </div>
+                            <p class="mt-5 text-sm text-white">Wine (red/white), 3-course lunch, preferential seating,
+                                and VIP waiting lounge with free canape & mocktail/cocktail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <img src="../assets/image/background-biru-desktop.png" class="h-[50vh] mt-[-15%] w-full object-cover"
+        <img src="../assets/image/background-biru-desktop.png" class="h-[50vh] mt-[-15%] w-full object-cover hidden lg:block"
             lt="../assets/image/background-biru-desktop.png">
     </section>
 </template>
