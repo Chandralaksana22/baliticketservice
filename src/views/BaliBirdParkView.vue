@@ -1,5 +1,5 @@
 <script>
-import ImageCard from '@/components/ImageCard.vue';
+import CardComponent from '../components/CardDaily.vue';
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import PlaceToGoPort from '../components/PlaceToGoPort.vue';
@@ -19,7 +19,7 @@ export default {
         SwiperSlide,
         PanelInfo,
         PlaceToGoPort,
-        ImageCard
+        CardComponent
     },
     setup() {
         return {
@@ -28,62 +28,41 @@ export default {
     },
     data() {
         return {
-            places: [
-                {
-                    imageSrc: "https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg",
-                    title: "ELEPHANT MUD FUN",
-                    description: "Our new Elephant Mud Fun half-day package allowing guest to get down and dirty with our friendly Sumatran elephants while discovering all about their behavior and lifestyle from our experienced mahout handlers.",
-                    buttonLink: "/ticket-detail"
-                },
-                {
-                    imageSrc: "https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg",
-                    title: "ELEPHANT MUD FUN",
-                    description: "Our new Elephant Mud Fun half-day package allowing guest to get down and dirty with our friendly Sumatran elephants while discovering all about their behavior and lifestyle from our experienced mahout handlers.",
-                    buttonLink: "/ticket-detail"
-                },
-                {
-                    imageSrc: "https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg",
-                    title: "ELEPHANT MUD FUN",
-                    description: "Our new Elephant Mud Fun half-day package allowing guest to get down and dirty with our friendly Sumatran elephants while discovering all about their behavior and lifestyle from our experienced mahout handlers.",
-                    buttonLink: "/ticket-detail"
-                },
-            ],
             cards: [
                 {
-                    imageSrc: "http://localhost/bts/themes/demo/assets/images/image-1.png",
-                    title: "ELEPHANT MUD FUN SESSION ONE",
-                    session: "Morning",
-                    lastCheckIn: "07:30 (GMT+8)",
-                    inclusion: "Admission Ticket, Welcome Drink, Feeding the Elephant, Mud Fun Activity, Lunch, Towel, Insurance",
-                    link: "/ticket-detail",
-                    buttonText: "Book Now"
+                    imageSrc: 'https://s3-alpha-sig.figma.com/img/a39b/6384/5a7bb9d7701dea9f3ac242d568667bd7?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FRZd9VzezUFw8XF3ZVK6Bpuzl7iYk276aMvhJlo~G6iGLr1mrOabuwjh9duc2PGwz7tR6t48z00YrpnRZrwT8SqCBPWZbL5GYaZn-D0DbGNwMK55thCYQAZ6qPBXSfxz-VfGmC6c~jM6cU-UaW7gne6cdcmCpEO0tN73Hp31kCogPLgDWgV~X-peZp7uVpQa57uYJeY1cX72RGZPRt~B0ZgMgqWlhd7f3U0hsW8HGSmBgjhDaWqzb~CC8YPpzLpEE~A-3ZGDy8ZG~L5Wx-IaYJgosYG67JEzf7QKqEDjp7C-3nliVS~jKL8VWp4g-kMWbLb-4BEWeqrktMn6307hGA__',
+                    imageAlt: 'Explore Papua',
+                    title: 'Explore Papua',
+                    link: 'https://example.com/papua',
+                    buttonText: 'All Day'
                 },
                 {
-                    imageSrc: "http://localhost/bts/themes/demo/assets/images/image-2.png",
-                    title: "ELEPHANT MUD FUN SESSION TWO",
-                    session: "Afternoon",
-                    lastCheckIn: "12:30 (GMT+8)",
-                    inclusion: "Admission Ticket, Welcome Drink, Feeding the Elephant, Mud Fun Activity, Lunch, Towel, Insurance",
-                    link: "/ticket-detail",
-                    buttonText: "Book Now"
+                    imageSrc: 'https://s3-alpha-sig.figma.com/img/a39b/6384/5a7bb9d7701dea9f3ac242d568667bd7?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FRZd9VzezUFw8XF3ZVK6Bpuzl7iYk276aMvhJlo~G6iGLr1mrOabuwjh9duc2PGwz7tR6t48z00YrpnRZrwT8SqCBPWZbL5GYaZn-D0DbGNwMK55thCYQAZ6qPBXSfxz-VfGmC6c~jM6cU-UaW7gne6cdcmCpEO0tN73Hp31kCogPLgDWgV~X-peZp7uVpQa57uYJeY1cX72RGZPRt~B0ZgMgqWlhd7f3U0hsW8HGSmBgjhDaWqzb~CC8YPpzLpEE~A-3ZGDy8ZG~L5Wx-IaYJgosYG67JEzf7QKqEDjp7C-3nliVS~jKL8VWp4g-kMWbLb-4BEWeqrktMn6307hGA__',
+                    imageAlt: 'Discover Bali',
+                    title: 'Discover Bali',
+                    link: 'https://example.com/bali',
+                    buttonText: 'All Day'
                 },
                 {
-                    imageSrc: "http://localhost/bts/themes/demo/assets/images/image-1.png",
-                    title: "ELEPHANT MUD FUN SESSION ONE",
-                    session: "Morning",
-                    lastCheckIn: "07:30 (GMT+8)",
-                    inclusion: "Admission Ticket, Welcome Drink, Feeding the Elephant, Mud Fun Activity, Lunch, Towel, Insurance",
-                    link: "/ticket-detail",
-                    buttonText: "Book Now"
+                    imageSrc: 'https://s3-alpha-sig.figma.com/img/a39b/6384/5a7bb9d7701dea9f3ac242d568667bd7?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FRZd9VzezUFw8XF3ZVK6Bpuzl7iYk276aMvhJlo~G6iGLr1mrOabuwjh9duc2PGwz7tR6t48z00YrpnRZrwT8SqCBPWZbL5GYaZn-D0DbGNwMK55thCYQAZ6qPBXSfxz-VfGmC6c~jM6cU-UaW7gne6cdcmCpEO0tN73Hp31kCogPLgDWgV~X-peZp7uVpQa57uYJeY1cX72RGZPRt~B0ZgMgqWlhd7f3U0hsW8HGSmBgjhDaWqzb~CC8YPpzLpEE~A-3ZGDy8ZG~L5Wx-IaYJgosYG67JEzf7QKqEDjp7C-3nliVS~jKL8VWp4g-kMWbLb-4BEWeqrktMn6307hGA__',
+                    imageAlt: 'Visit Jakarta',
+                    title: 'Visit Jakarta',
+                    link: 'https://example.com/jakarta',
+                    buttonText: 'All Day'
                 },
                 {
-                    imageSrc: "http://localhost/bts/themes/demo/assets/images/image-2.png",
-                    title: "ELEPHANT MUD FUN SESSION TWO",
-                    session: "Afternoon",
-                    lastCheckIn: "12:30 (GMT+8)",
-                    inclusion: "Admission Ticket, Welcome Drink, Feeding the Elephant, Mud Fun Activity, Lunch, Towel, Insurance",
-                    link: "/ticket-detail",
-                    buttonText: "Book Now"
+                    imageSrc: 'https://s3-alpha-sig.figma.com/img/a39b/6384/5a7bb9d7701dea9f3ac242d568667bd7?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FRZd9VzezUFw8XF3ZVK6Bpuzl7iYk276aMvhJlo~G6iGLr1mrOabuwjh9duc2PGwz7tR6t48z00YrpnRZrwT8SqCBPWZbL5GYaZn-D0DbGNwMK55thCYQAZ6qPBXSfxz-VfGmC6c~jM6cU-UaW7gne6cdcmCpEO0tN73Hp31kCogPLgDWgV~X-peZp7uVpQa57uYJeY1cX72RGZPRt~B0ZgMgqWlhd7f3U0hsW8HGSmBgjhDaWqzb~CC8YPpzLpEE~A-3ZGDy8ZG~L5Wx-IaYJgosYG67JEzf7QKqEDjp7C-3nliVS~jKL8VWp4g-kMWbLb-4BEWeqrktMn6307hGA__',
+                    imageAlt: 'Discover Bali',
+                    title: 'Discover Bali',
+                    link: 'https://example.com/bali',
+                    buttonText: 'All Day'
+                },
+                {
+                    imageSrc: 'https://s3-alpha-sig.figma.com/img/a39b/6384/5a7bb9d7701dea9f3ac242d568667bd7?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FRZd9VzezUFw8XF3ZVK6Bpuzl7iYk276aMvhJlo~G6iGLr1mrOabuwjh9duc2PGwz7tR6t48z00YrpnRZrwT8SqCBPWZbL5GYaZn-D0DbGNwMK55thCYQAZ6qPBXSfxz-VfGmC6c~jM6cU-UaW7gne6cdcmCpEO0tN73Hp31kCogPLgDWgV~X-peZp7uVpQa57uYJeY1cX72RGZPRt~B0ZgMgqWlhd7f3U0hsW8HGSmBgjhDaWqzb~CC8YPpzLpEE~A-3ZGDy8ZG~L5Wx-IaYJgosYG67JEzf7QKqEDjp7C-3nliVS~jKL8VWp4g-kMWbLb-4BEWeqrktMn6307hGA__',
+                    imageAlt: 'Discover Bali',
+                    title: 'Discover Bali',
+                    link: 'https://example.com/bali',
+                    buttonText: 'All Day'
                 },
             ]
         };
@@ -103,167 +82,60 @@ export default {
                 <PanelInfo />
             </div>
         </div>
-        <div id="placetogo">
+        <div>
             <h4 class="boldfont text-white text-3xl mb-5 text-center">Daily Schedule</h4>
-            <div class="grid grid-cols-3 px-10 mb-[-10%] gap-4 ">
-                <PlaceToGoPort v-for="(place, index) in places" :key="index" :imageSrc="place.imageSrc"
-                    :title="place.title" :subTitle="place.subTitle" :description="place.description"
-                    :buttonLink="place.buttonLink" />
+            <div class="container mx-auto ps-10 pb-10">
+                <swiper :slidesPerView="1" :spaceBetween="10" :navigation="true" :breakpoints="{
+                    '640': {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    '768': {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                    },
+                    '1024': {
+                        slidesPerView: 3.3,
+                        spaceBetween: 20,
+                    },
+                }" :modules="modules" class="mySwiper">
+                    <swiper-slide v-for="(card, index) in cards" :key="index">
+                        <CardComponent :imageSrc="card.imageSrc" :imageAlt="card.imageAlt" :title="card.title"
+                            :link="card.link" :buttonText="card.buttonText" />
+                    </swiper-slide>
+                </swiper>
+            </div>
+            <div class="container mx-auto ps-10 mb-[-10%]">
+                <swiper :slidesPerView="1" :spaceBetween="10" :navigation="true" :breakpoints="{
+                    '640': {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    '768': {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                    },
+                    '1024': {
+                        slidesPerView: 3.3,
+                        spaceBetween: 20,
+                    },
+                }" :modules="modules" class="mySwiper">
+                    <swiper-slide v-for="(card, index) in cards" :key="index">
+                        <CardComponent :imageSrc="card.imageSrc" :imageAlt="card.imageAlt" :title="card.title"
+                            :link="card.link" :buttonText="card.buttonText" />
+                    </swiper-slide>
+                </swiper>
             </div>
         </div>
     </section>
     <section class="bg-cover bg-[url('../assets/image/background-biru-desktop.png')]">
-        <h4 class="boldfont text-white text-3xl pt-[15%] mb-5 text-center">ALL PACKAGES, GET MORE PAY LESS</h4>
-        <div class="p-10">
-
-
-            <div class="mb-4">
-                <ul class="flex flex-wrap -mb-px text-sm font-medium mx-auto justify-center text-center"
-                    id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" role="tablist">
-                    <li class="me-2" role="presentation">
-                        <button class="inline-block package boldfont rounded-lg p-4" id="profile-styled-tab"
-                            data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
-                            aria-selected="false">SINGLE PACKAGE</button>
-                    </li>
-                    <li class="me-2" role="presentation">
-                        <button class="inline-block package boldfont rounded-lg p-4" id="dashboard-styled-tab"
-                            data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard"
-                            aria-selected="false">COMBO PACKAGE</button>
-                    </li>
-                    <li class="me-2" role="presentation">
-                        <button class="inline-block package boldfont rounded-lg p-4" id="settings-styled-tab"
-                            data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings"
-                            aria-selected="false">STAY PACKAGE</button>
-                    </li>
-                </ul>
-            </div>
-            <div id="default-styled-tab-content">
-                <div class="hidden" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <swiper :slidesPerView="1" :spaceBetween="10" :navigation="true" :breakpoints="{
-                    '640': {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    '768': {
-                        slidesPerView: 3,
-                        spaceBetween: 0,
-                    },
-                    '1024': {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
-                    },
-                }" :modules="modules" class="mySwiper container mx-auto">
-                        <swiper-slide v-for="(item, index) in cards" :key="index">
-
-                            <ImageCard :imageSrc="item.imageSrc" :title="item.title" :session="item.session"
-                                :lastCheckIn="item.lastCheckIn" :inclusion="item.inclusion" :link="item.link"
-                                :buttonText="item.buttonText" />
-
-                        </swiper-slide>
-                    </swiper>
-                </div>
-                <div class="hidden" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                    <swiper :slidesPerView="1" :spaceBetween="10" :navigation="true" :breakpoints="{
-                    '640': {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    '768': {
-                        slidesPerView: 3,
-                        spaceBetween: 0,
-                    },
-                    '1024': {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
-                    },
-                }" :modules="modules" class="mySwiper container mx-auto">
-                        <swiper-slide v-for="(item, index) in cards" :key="index">
-
-                            <ImageCard :imageSrc="item.imageSrc" :title="item.title" :session="item.session"
-                                :lastCheckIn="item.lastCheckIn" :inclusion="item.inclusion" :link="item.link"
-                                :buttonText="item.buttonText" />
-
-                        </swiper-slide>
-                    </swiper>
-                </div>
-                <div class="hidden" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
-                    <swiper :slidesPerView="1" :spaceBetween="10" :navigation="true" :breakpoints="{
-                    '640': {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    '768': {
-                        slidesPerView: 3,
-                        spaceBetween: 0,
-                    },
-                    '1024': {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
-                    },
-                }" :modules="modules" class="mySwiper container mx-auto">
-                        <swiper-slide v-for="(item, index) in cards" :key="index">
-
-                            <ImageCard :imageSrc="item.imageSrc" :title="item.title" :session="item.session"
-                                :lastCheckIn="item.lastCheckIn" :inclusion="item.inclusion" :link="item.link"
-                                :buttonText="item.buttonText" />
-
-                        </swiper-slide>
-                    </swiper>
-                </div>
-
-            </div>
+        <h4 class="boldfont text-white w-1/2 mx-auto text-3xl pt-[15%] mb-5 text-center">PURCHASE BALI BIRD PARK GENERAL
+            ADMISSION TICKET BY CLICKING ON THIS BUTTON BELOW</h4>
+        <div class="text-center pt-10 pb-20">
+            <a href="" class="p-4 text-xl rounded-lg bg-white boldfont text-center"> Book Ticket
+            </a>
         </div>
     </section>
-    <section>
-        <div>
-            <div class="grid grid-cols-1 lg:grid-cols-12">
-                <div class="col-span-5">
-                    <div class="relative">
-                        <swiper :navigation="true" :modules="modules" class="mySwiper">
-                            <swiper-slide>
-                                <div class="relative">
-                                    <img src="../assets/image/bfh5.png" alt=""
-                                        class="h-[100vh] w-full object-cover filter brightness-50">
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="relative">
-                                    <img src="../assets/image/bfh5.png" alt=""
-                                        class="h-[100vh] w-full object-cover filter brightness-50">
-                                </div>
-                            </swiper-slide>
-                        </swiper>
-                        <div class="absolute z-10 top-[6rem] left-1/2 translate-x-[-50%] text-center w-full text-white">
-                            <h1 class="boldfont text-3xl">General Admission</h1>
-                        </div>
-                        <div class="absolute z-10 bottom-[6rem] left-1/2 translate-x-[-50%] px-10 w-full text-white">
-                            <div class="mb-10">
-                                <h1 class="font-bold boldfont text-white">Inclusion :</h1>
-                                <p class="text-white">Animal Encounter & Show, Jungle Splash Waterplay, Insurance </p>
-                                <h1 class="font-bold boldfont text-white mt-5"> Facilities :</h1>
-                                <p class="text-white">Wheelchair access, Toilet, Nursery, Restaurant, Parking area, ATM,
-                                    Praying room, Wi-fi, Shuttle bus (inside zoo), Souvenir </p>
-                            </div>
-                            <div class="text-center">
-                                <a class="px-2 py-3 bg-white text-black rounded-md slide boldfont">Book Ticket</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-7 bg-cover bg-center bg-[url('../assets/image/bg-hijau.png')]">
-                    <button type="button" class="bg-yellow p-3 boldfont text-xl rounded-b-xl"
-                        style="position: relative; top:50%; transform-origin: top left; transform: rotate(-90deg) translateX(-50%);">
-                        <h3 class="boldfont">MEMBERSHIP</h3>
-                    </button>
-                    <div class="flex flex-col items-center justify-center pt-10 mx-auto px-10 space-y-4">
-                        <img class="object-contain h-[35vh]" src="../assets/image/member1.png" alt="Member 1">
-                        <img class="object-contain h-[35vh]" src="../assets/image/member2.png" alt="Member 2">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 </template>
 
 <style>

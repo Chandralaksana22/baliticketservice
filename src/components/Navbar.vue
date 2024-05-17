@@ -47,12 +47,12 @@
                                     </RouterLink>
                                 </li>
                                 <li class="mt-2">
-                                    <RouterLink class="block  text-sm boldfont text-black " to="/contact">Bali Farm
+                                    <RouterLink class="block  text-sm boldfont text-black " to="/bali-farm">Bali Farm
                                         House
                                     </RouterLink>
                                 </li>
                                 <li class="mt-2">
-                                    <RouterLink class="block  text-sm boldfont text-black " to="/contact">Bali Safari &
+                                    <RouterLink class="block  text-sm boldfont text-black " to="/bali-safari">Bali Safari &
                                         Marine
                                         Park
                                     </RouterLink>
