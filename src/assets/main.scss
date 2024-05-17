@@ -55,7 +55,7 @@ a {
 
 #feature {
 
-  .feature-port{
+  .feature-port {
     display: block;
     overflow: hidden;
     position: relative;
@@ -135,13 +135,15 @@ a {
       object-position: top;
       filter: brightness(50%);
     }
+
     &:hover {
       .cover .detail {
         transform: translateY(0px);
         transition: opacity 0.1s, transform 1s;
       }
 
-      h3, h5 {
+      h3,
+      h5 {
         color: #FFD600 !important;
       }
     }
@@ -222,6 +224,18 @@ a {
   &:hover:before {
     opacity: 1;
   }
+}
+
+.zoom-on-hover img {
+  transition: transform 1s ease;
+}
+
+.zoom-on-hover:hover img {
+  transform: scale(1.1);
+}
+
+.zoom-on-hover:hover h5 {
+  color: #FFD600 !important;
 }
 
 .panel-home {
@@ -382,4 +396,24 @@ a {
 .tab-button[aria-selected="false"] {
   background-color: #ECECEC;
   color: #828282;
+}
+
+#swiper-ps {
+  .swiper-wrapper {
+    padding-left: 2.5rem !important;
+  }
+}
+
+
+.card-zoom-hover {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
 }

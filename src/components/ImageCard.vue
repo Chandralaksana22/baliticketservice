@@ -1,8 +1,8 @@
 <template>
     <div class="position rounded-lg overflow-hidden">
       <img class="filter brightness-50 rounded-lg h-[400px] w-full object-cover" :src="imageSrc" alt="">
-      <div class="absolute top-[25%] left-1/2 -translate-x-1/2 text-center w-full px-2">
-        <h5 class="boldfont text-yellow text-center">{{ title }}</h5>
+      <div class="absolute top-[25%] left-1/2 -translate-x-1/2 text-center w-full px-4">
+        <h5 class="boldfont text-2xl text-yellow text-center">{{ title }}</h5>
         <p class="text-md text-yellow">Session : {{ session }} <br> Last check-in : {{ lastCheckIn }}</p>
         <p class="mt-5 text-white">INCLUSION : <br>{{ inclusion }}</p>
       </div>

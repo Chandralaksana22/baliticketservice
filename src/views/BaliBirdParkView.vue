@@ -82,7 +82,7 @@ export default {
                 <PanelInfo />
             </div>
         </div>
-        <div>
+        <div id="swiper-ps">
             <h4 class="boldfont text-white text-3xl mb-5 text-center">Daily Schedule</h4>
             <div class="pb-10">
                 <swiper :slidesPerView="1" :spaceBetween="10" :navigation="true" :breakpoints="{
@@ -169,7 +169,5 @@ button.package[aria-selected="true"] {
     background-color: #FFD600;
     color: #0887BE;
 }
-.swiper-wrapper{
-    padding-left: 2.5rem !important
-}
+
 </style>
