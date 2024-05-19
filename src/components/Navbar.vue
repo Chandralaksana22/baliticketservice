@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="px-2 sm:px-4 py-2.5 fixed w-full top-0 left-0 bg-transparent bg-gradient-to-b from-black to-transparent"  :class="{ 'bg-black bg-opacity-45': isScrolled }" style="z-index: 99;">
+        class="px-2 sm:px-4 py-2.5 hidden lg:block fixed w-full top-0 left-0 bg-transparent bg-gradient-to-b from-black to-transparent"  :class="{ 'bg-black bg-opacity-45': isScrolled }" style="z-index: 99;">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <RouterLink class="flex items-center space-x-3 rtl:space-x-reverse" to="/">
                 <img src="../assets/image/logo.png" class="h-16" />

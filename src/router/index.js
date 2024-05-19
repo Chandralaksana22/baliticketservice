@@ -7,6 +7,7 @@ import BaliZooView from '../views/BaliZooView.vue'
 import BaliBirdPark from '../views/BaliBirdParkView.vue'
 import BaliFarmView from '../views/BaliFarmView.vue'
 import BaliSafariView from '@/views/BaliSafariView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,10 @@ const router = createRouter({
       path: '/ticket-detail',
       name: 'ticket detail',
       component: DetailTicket
+    },
+    {
+      path: "/:notFound",
+      component: NotFoundView,
     },
   ]
 })
