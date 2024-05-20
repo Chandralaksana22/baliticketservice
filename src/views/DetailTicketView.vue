@@ -725,7 +725,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fixed bottom-0 left-0 right-0 bg-white p-5">
+                        <div class="fixed bottom-[10%] left-0 right-0 bg-white p-5">
                             <div class="grid grid-cols-2 gap-4">
                                 <div>
                                     <h1 class="text-xs font-bold text-black">Ticket Start From</h1>
@@ -740,7 +740,7 @@
                             </div>
                         </div>
                         <div id="drawer-bottom-example"
-                            class="fixed bottom-0 left-0 right-0  z-40 w-full overflow-y-auto transition-transform bg-white dark:bg-gray-800 transform-none"
+                            class="fixed bottom-0 left-0 right-0  z-[90] w-full overflow-y-auto transition-transform bg-white dark:bg-gray-800 transform-none"
                             tabindex="-1" aria-labelledby="drawer-bottom-label">
                             <h5 id="drawer-bottom-label" class="my-4 text-base font-semibold text-blue text-center">
                                 Ticket Summary
