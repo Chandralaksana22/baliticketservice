@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-cover bg-[url('../assets/image/bgfooter.png')]">
-        <div class="container mx-auto px-5 lg:px-10">
+        <div class="container mx-auto  px-5 pb-40 lg:pb-0 lg:px-10">
             <div class="bg-brown rounded-b-[30px] p-4 lg:p-14 mb-10">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
                     <div class="lg:col-span-2">

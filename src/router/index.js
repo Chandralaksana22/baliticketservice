@@ -9,6 +9,7 @@ import BaliFarmView from '@/views/BaliFarmView.vue'
 import BaliSafariView from '@/views/BaliSafariView.vue'
 import PlaceToGoView from '@/views/PlaceTioGoView.vue'
 import DetailPlaceToGo from '@/views/DetailPlaceToGoView.vue'
+import ConfirmationPageView from '@/views/ConfirmationPageView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 
 const router = createRouter({
@@ -58,6 +59,11 @@ const router = createRouter({
       path: '/ticket',
       name: 'ticket',
       component: TicketView
+    },
+    {
+      path: '/confirmation',
+      name: 'confirmation',
+      component: ConfirmationPageView
     },
     {
       path: '/ticket-detail',

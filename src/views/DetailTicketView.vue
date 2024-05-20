@@ -725,28 +725,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fixed bottom-[10%] left-0 right-0 bg-white p-5">
+                        <div class="fixed bottom-[10%] z-[99] left-0 right-0 bg-white p-5">
                             <div class="grid grid-cols-2 gap-4">
                                 <div>
                                     <h1 class="text-xs font-bold text-black">Ticket Start From</h1>
                                     <p class="text-lg font-bold text-blue">IDR 355,500</p>
                                 </div>
-                                <button class="text-white bg-blue rounded-xl text-white font-semibold text-sm"
-                                    type="button" data-drawer-target="drawer-bottom-example"
-                                    data-drawer-show="drawer-bottom-example" data-drawer-placement="bottom"
-                                    aria-controls="drawer-bottom-example">
+                                <button @click="showDrawer = true" class="text-white bg-blue rounded-xl text-white font-semibold text-sm"
+                                    type="button">
                                     Book Ticket
                                 </button>
                             </div>
                         </div>
-                        <div id="drawer-bottom-example"
-                            class="fixed bottom-0 left-0 right-0  z-[90] w-full overflow-y-auto transition-transform bg-white dark:bg-gray-800 transform-none"
+                        <div v-if="showDrawer" id="drawer-bottom-example"
+                            class="fixed bottom-0 left-0 right-0  z-[999] w-full overflow-y-auto transition-transform bg-white dark:bg-gray-800 transform-none"
                             tabindex="-1" aria-labelledby="drawer-bottom-label">
                             <h5 id="drawer-bottom-label" class="my-4 text-base font-semibold text-blue text-center">
                                 Ticket Summary
                             </h5>
-                            <button type="button" data-drawer-hide="drawer-bottom-example"
-                                aria-controls="drawer-bottom-example"
+                            <button @click="showDrawer = false" type="button"
                                 class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
                                 <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                     viewBox="0 0 14 14">
@@ -920,6 +917,11 @@ export default {
     components: {
         QuantitySelector,
     },
+    data() {
+        return {
+            showDrawer: false
+        };
+    }
 };
 </script>
 <style>
@@ -932,4 +934,5 @@ export default {
 .button-text-blue[aria-expanded="false"] {
     color: #008AC6;
 }
+
 </style>
