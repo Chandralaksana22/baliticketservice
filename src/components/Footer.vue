@@ -42,32 +42,32 @@
                 <div class="lg:col-span-3 gap-4">
                     <ul class="text-center lg:text-start">
                         <li class="mb-2">
-                            <a href="https://flowbite.com/" class="text-brown boldfont text-md lg:text-xl">Home</a>
+                            <RouterLink to="/" class="text-brown boldfont text-md lg:text-xl">Home</RouterLink>
                         </li>
                         <li class="mb-2">
                             <div href="https://tailwindcss.com/" class="text-brown boldfont text-md lg:text-xl">
                                 Places to Go</div>
                             <ul>
                                 <li>
-                                    <a href="https://flowbite.com/" class="text-brown">Bali Zoo</a>
+                                    <RouterLink to="/" class="text-brown">Bali Zoo</RouterLink>
                                 </li>
                                 <li>
-                                    <a href="https://tailwindcss.com/" class="text-brown">Bali Bird Park</a>
+                                    <RouterLink to="/" class="text-brown">Bali Bird Park</RouterLink>
                                 </li>
                                 <li>
-                                    <a href="https://tailwindcss.com/" class="text-brown">Bali Farm House</a>
+                                    <RouterLink to="/" class="text-brown">Bali Farm House</RouterLink>
                                 </li>
                                 <li>
-                                    <a href="https://tailwindcss.com/" class="text-brown">Bali Safari</a>
+                                    <RouterLink to="/" class="text-brown">Bali Safari</RouterLink>
                                 </li>
                             </ul>
                         </li>
                         <li class="mb-2">
-                            <a href="https://flowbite.com/" class="text-brown boldfont text-md lg:text-xl">Tickets</a>
+                            <RouterLink to="/ticket" class="text-brown boldfont text-md lg:text-xl">Tickets</RouterLink>
                         </li>
                         <li class="mb-2">
-                            <a href="https://flowbite.com/" class="text-brown boldfont text-md lg:text-xl">Contact
-                                Us</a>
+                            <RouterLink to="/contact" class="text-brown boldfont text-md lg:text-xl">Contact
+                                Us</RouterLink>
                         </li>
                     </ul>
                 </div>

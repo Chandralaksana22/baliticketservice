@@ -97,7 +97,7 @@ export default {
           </div>
         </div>
         <div class="grid lg:hidden grid-cols-1 py-5 gap-6">
-          <a href="" class="img-border relative">
+          <RouterLink to="/detail-place-to-go" class="img-border relative">
             <img class="h-[13rem] w-full object-cover object-top filter brightness-50"
               src="https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg" alt="">
             <div class="absolute top-[30%]">
@@ -107,8 +107,8 @@ export default {
                   the behaviour of over 500 rare and exotic animals in a lush, tropical environment.</p>
               </div>
             </div>
-          </a>
-          <a href="" class="img-border relative">
+          </RouterLink>
+          <RouterLink to="/detail-place-to-go" class="img-border relative">
             <img class="h-[13rem] w-full object-cover object-top filter brightness-50"
               src="https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg" alt="">
             <div class="absolute top-[30%]">
@@ -118,8 +118,8 @@ export default {
                   the behaviour of over 500 rare and exotic animals in a lush, tropical environment.</p>
               </div>
             </div>
-          </a>
-          <a href="" class="img-border relative">
+          </RouterLink>
+          <RouterLink to="/detail-place-to-go" class="img-border relative">
             <img class="h-[13rem] w-full object-cover object-top filter brightness-50"
               src="https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg" alt="">
             <div class="absolute top-[30%]">
@@ -129,8 +129,8 @@ export default {
                   the behaviour of over 500 rare and exotic animals in a lush, tropical environment.</p>
               </div>
             </div>
-          </a>
-          <a href="" class="img-border relative">
+          </RouterLink>
+          <RouterLink to="/detail-place-to-go" class="img-border relative">
             <img class="h-[13rem] w-full object-cover object-top filter brightness-50"
               src="https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg" alt="">
             <div class="absolute top-[30%]">
@@ -140,7 +140,7 @@ export default {
                   the behaviour of over 500 rare and exotic animals in a lush, tropical environment.</p>
               </div>
             </div>
-          </a>
+          </RouterLink>
         </div>
       </div>
       <div>
