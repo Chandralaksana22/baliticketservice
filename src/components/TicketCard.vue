@@ -11,7 +11,7 @@
                 <button class="bg-transparent text-blue text-[10px] font-bold">{{ bookedText }}</button>
             </div>
             <div class="my-5">
-                <h2 class="text-xs text-gray-600 font-bold">{{ generalAdmissionText }}</h2>
+                <h2 class="text-xs text-gray-400 font-bold">{{ generalAdmissionText }}</h2>
                 <h1 class="text-lg text-black font-bold">{{ title }}</h1>
                 <p class="text-xs text-gray-600 line-through">{{ oldPrice }}</p>
                 <p class="text-md text-[#EF681C] font-bold">
