@@ -743,11 +743,11 @@
                         <div v-if="showDrawer" id="drawer-bottom-example"
                             class="fixed bottom-0 left-0 right-0  z-[999] w-full overflow-y-auto transition-transform bg-white dark:bg-gray-800 transform-none"
                             tabindex="-1" aria-labelledby="drawer-bottom-label">
-                            <h5 id="drawer-bottom-label" class="my-4 text-base font-semibold text-blue text-center">
+                            <h5 id="drawer-bottom-label" class="pt-10 mb-3 text-base font-semibold text-blue text-center">
                                 Ticket Summary
                             </h5>
                             <button @click="showDrawer = false" type="button"
-                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+                                class="mt-5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-3 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
                                 <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                     viewBox="0 0 14 14">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -926,14 +926,13 @@ export default {
             showDrawer: false
         };
     },
-    methods: {
-    openDrawer() {
-      this.showDrawer = true;
-      document.body.style.overflow = 'hidden';
-    },
-    closeDrawer() {
-      this.showDrawer = false;
-      document.body.style.overflow = '';
+    watch: {
+    showDrawer(newValue) {
+      if (newValue) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
     }
   }
 };
