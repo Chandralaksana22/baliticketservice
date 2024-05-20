@@ -1,5 +1,5 @@
 <template>
-    <RouterLink to="/ticket-detail" class="grid grid-cols-3 gap-3 items-start" style="border-bottom: 1px solid #9ca3af;">
+    <RouterLink to="/ticket-detail" class="grid grid-cols-3 gap-3 py-2 items-start" style="border-bottom: 1px solid #9ca3af;">
         <div class="col-span-1">
             <img :src="imageSrc" :alt="imageAlt" class="rounded-2xl h-[130px] object-cover" />
         </div>
