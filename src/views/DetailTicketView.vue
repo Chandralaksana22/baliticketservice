@@ -731,7 +731,7 @@
                                     <h1 class="text-xs font-bold text-black">Ticket Start From</h1>
                                     <p class="text-lg font-bold text-blue">IDR 355,500</p>
                                 </div>
-                                <button @click="showDrawer = true"
+                                <button @click="showDrawer = true" data-drawer-body-scrolling="false"
                                     class="text-white bg-blue rounded-xl text-white font-semibold text-sm"
                                     type="button">
                                     Book Ticket
@@ -739,7 +739,7 @@
                             </div>
                         </div>
                         <div v-if="showDrawer" class="fixed inset-0 bg-black bg-opacity-50 z-40"
-                            @click="showDrawer = false"></div>
+                            @click="showDrawer = false" ></div>
                         <div v-if="showDrawer" id="drawer-bottom-example"
                             class="fixed bottom-0 left-0 right-0  z-[999] w-full overflow-y-auto transition-transform bg-white dark:bg-gray-800 transform-none"
                             tabindex="-1" aria-labelledby="drawer-bottom-label">
@@ -925,7 +925,17 @@ export default {
         return {
             showDrawer: false
         };
+    },
+    methods: {
+    openDrawer() {
+      this.showDrawer = true;
+      document.body.style.overflow = 'hidden';
+    },
+    closeDrawer() {
+      this.showDrawer = false;
+      document.body.style.overflow = '';
     }
+  }
 };
 </script>
 <style>
