@@ -77,7 +77,7 @@
     </nav>
     <div class="block lg:hidden fixed w-100 bottom-0 left-0 right-0 z-[99]">
 
-        <div class="nav-bottom-bar flex justify-center items-center justify-between py-2 px-4">
+        <div class="nav-bottom-bar flex justify-center items-center justify-between py-2 px-10">
             <RouterLink to="/" class="flex flex-col items-center" v-slot="{ isActive }">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
                     <path
