@@ -72,11 +72,7 @@ export default {
 
 <template>
     <section class="bg-cover bg-[url('../assets/image/bg-desktop.png')]">
-        <div class="bg-center bg-cover h-[100] md:bg-[url('../assets/image/balibird.png')]">
-            <div class="h-[25vh] lg:h-[100vh] px-5 lg:px-10 container mx-auto flex items-center justify-center">
-                <img src="../assets/image/balibirdlogo.png" class="object-contain h-1/4" alt="image">
-            </div>
-        </div>
+        <img src="../assets/image/balibird.png" alt="../assets/image/balibird.png">
         <div class="px-5 pb-0 lg:pb-44 lg:px-10 container mx-auto">
             <div class="panel-transparent p-5 lg:p-10 rounded-3xl mt-10 mb-[-20%] relative">
                 <PanelInfo />

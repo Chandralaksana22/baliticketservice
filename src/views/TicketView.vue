@@ -204,9 +204,9 @@ export default {
                         <h5 class="boldfont text-xl text-white text-center">BALI SAFARI &amp; <br> MARINE PARK </h5>
                     </div>
                     <div class="absolute bottom-[5%] left-1/2 z-50 -translate-x-1/2 text-center w-100 text-white">
-                        <a type="submit"
+                        <RouterLink to="/ticket-detail"
                             class="p-2 text-lg bg-white rounded-lg text-black slide boldfont text-center">Book
-                            Ticket</a>
+                            Ticket</RouterLink>
                     </div>
                 </div>
                 <div class="relative img-border card overflow-hidden zoom-on-hover">
@@ -217,9 +217,9 @@ export default {
                         <h5 class="boldfont text-xl text-white text-center">BALI SAFARI &amp; <br> MARINE PARK </h5>
                     </div>
                     <div class="absolute bottom-[5%] left-1/2 z-50 -translate-x-1/2 text-center w-100 text-white">
-                        <a type="submit"
+                        <RouterLink to="/ticket-detail"
                             class="p-2 text-lg bg-white rounded-lg text-black slide boldfont text-center">Book
-                            Ticket</a>
+                            Ticket</RouterLink>
                     </div>
                 </div>
                 <div class="relative img-border card overflow-hidden zoom-on-hover">
@@ -230,9 +230,9 @@ export default {
                         <h5 class="boldfont text-xl text-white text-center">BALI SAFARI &amp; <br> MARINE PARK </h5>
                     </div>
                     <div class="absolute bottom-[5%] left-1/2 z-50 -translate-x-1/2 text-center w-100 text-white">
-                        <a type="submit"
+                        <RouterLink to="/ticket-detail"
                             class="p-2 text-lg bg-white rounded-lg text-black slide boldfont text-center">Book
-                            Ticket</a>
+                            Ticket</RouterLink>
                     </div>
                 </div>
                 <div class="relative img-border card overflow-hidden zoom-on-hover">
@@ -243,9 +243,9 @@ export default {
                         <h5 class="boldfont text-xl text-white text-center">BALI SAFARI &amp; <br> MARINE PARK </h5>
                     </div>
                     <div class="absolute bottom-[5%] left-1/2 z-50 -translate-x-1/2 text-center w-100 text-white">
-                        <a type="submit"
+                        <RouterLink to="/ticket-detail"
                             class="p-2 text-lg bg-white rounded-lg text-black slide boldfont text-center">Book
-                            Ticket</a>
+                            Ticket</RouterLink>
                     </div>
                 </div>
             </div>

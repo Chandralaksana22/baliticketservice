@@ -48,7 +48,7 @@ export default {
         <h5 class="text-center font-bold text-white text-2xl boldfont">Places To Go</h5>
         <div class="hidden lg:grid grid-cols-1 lg:grid-cols-12 py-5 gap-6">
           <div class="col-span-12 lg:col-span-7">
-            <a href="" class="feature-port h-[25rem] img-border">
+            <RouterLink to="/bali-zoo" class="feature-port h-[25rem] img-border">
               <img src="https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg" alt="">
               <div class="cover">
                 <div class="detail px-10 text-white">
@@ -57,10 +57,10 @@ export default {
                     the behaviour of over 500 rare and exotic animals in a lush, tropical environment.</p>
                 </div>
               </div>
-            </a>
+            </RouterLink>
           </div>
           <div class="col-span-12 lg:col-span-5">
-            <a href="" class="feature-port h-[25rem] img-border">
+            <RouterLink to="/bali-zoo" class="feature-port h-[25rem] img-border">
               <img src="https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg" alt="">
               <div class="cover">
                 <div class="detail px-10 text-white">
@@ -69,10 +69,10 @@ export default {
                     the behaviour of over 500 rare and exotic animals in a lush, tropical environment.</p>
                 </div>
               </div>
-            </a>
+            </RouterLink>
           </div>
           <div class="col-span-12 lg:col-span-5">
-            <a href="" class="feature-port h-[25rem] img-border">
+            <RouterLink to="/bali-zoo" class="feature-port h-[25rem] img-border">
               <img src="https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg" alt="">
               <div class="cover">
                 <div class="detail px-10 text-white">
@@ -81,10 +81,10 @@ export default {
                     the behaviour of over 500 rare and exotic animals in a lush, tropical environment.</p>
                 </div>
               </div>
-            </a>
+            </RouterLink>
           </div>
           <div class="col-span-12 lg:col-span-7">
-            <a href="" class="feature-port h-[25rem] img-border">
+            <RouterLink to="/bali-zoo" class="feature-port h-[25rem] img-border">
               <img src="https://dashboard.bali-zoo.com/storage/photos/shares/Animals/Lion/Lion.jpg" alt="">
               <div class="cover">
                 <div class="detail px-10 text-white">
@@ -93,7 +93,7 @@ export default {
                     the behaviour of over 500 rare and exotic animals in a lush, tropical environment.</p>
                 </div>
               </div>
-            </a>
+            </RouterLink>
           </div>
         </div>
         <div class="grid lg:hidden grid-cols-1 py-5 gap-6">

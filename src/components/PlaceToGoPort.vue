@@ -9,7 +9,7 @@
                     <p class="content text-sm">{{ description }}</p>
                 </div>
             </div>
-            <div class="absolute bottom-[7%] left-1/2 -translate-x-1/2 text-center w-100">
+            <div class="absolute z-50 bottom-[7%] left-1/2 -translate-x-1/2 text-center w-100">
                 <a :href="buttonLink" class="bg-white rounded-lg p-2 slide boldfont text-center">Book Ticket</a>
             </div>
         </div>
