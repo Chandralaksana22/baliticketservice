@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import ContactView from '../views/ContactView.vue'
-import TicketView from '../views/TicketView.vue'
-import DetailTicket from '../views/DetailTicketView.vue'
-import BaliZooView from '../views/BaliZooView.vue'
-import BaliBirdPark from '../views/BaliBirdParkView.vue'
-import BaliFarmView from '../views/BaliFarmView.vue'
+import HomeView from '@/views/HomeView.vue'
+import ContactView from '@/views/ContactView.vue'
+import TicketView from '@/views/TicketView.vue'
+import DetailTicket from '@/views/DetailTicketView.vue'
+import BaliZooView from '@/views/BaliZooView.vue'
+import BaliBirdPark from '@/views/BaliBirdParkView.vue'
+import BaliFarmView from '@/views/BaliFarmView.vue'
 import BaliSafariView from '@/views/BaliSafariView.vue'
+import PlaceToGoView from '@/views/PlaceTioGoView.vue'
+import DetailPlaceToGo from '@/views/DetailPlaceToGoView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 
 const router = createRouter({
@@ -41,6 +43,16 @@ const router = createRouter({
       path: '/bali-bird-park',
       name: 'bali bird park',
       component: BaliBirdPark
+    },
+    {
+      path: '/place-to-go',
+      name: 'place to go',
+      component: PlaceToGoView
+    },
+    {
+      path: '/detail-place-to-go',
+      name: 'detail place to go',
+      component: DetailPlaceToGo
     },
     {
       path: '/ticket',
