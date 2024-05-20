@@ -4,7 +4,7 @@
             <img :src="imageSrc" :alt="imageAlt" class="rounded-2xl h-[130px] w-[130px] object-cover" />
         </div>
         <div class="col-span-2">
-            <button class="bg-[#926000] rounded-lg p-2 font-semibold text-white text-xs uppercase">{{ buttonText }}</button>
+            <button class="bg-[#926000] rounded-lg p-2 font-bold text-white text-xs uppercase">{{ buttonText }}</button>
             <div class="grid grid-cols-2 mt-2 gap-1">
                 <button class="bg-[#FFD600] rounded-lg px-2 py-1 text-black text-[10px] font-bold">{{ sellingTicketText
                     }}</button>
